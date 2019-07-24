@@ -37,6 +37,15 @@ app.use(
   }))
 );
 
-app.listen(4000);
+// Serve only the static files form the dist directory
+app.use(express.static('./dist'));
 
-console.log("Running a GraphQL API server at http://localhost:4000/graphql");
+app.get('*', function(req,res) {
+  res.sendFile(path.join(__dirname,'/dist/index.html'));
+});
+
+
+//app.listen(4000);
+app.listen(process.env.PORT || 3000);
+
+console.log("Running a GraphQL API server at " + 3000 );

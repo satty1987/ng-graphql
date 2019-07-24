@@ -3,16 +3,20 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"ng serve\" \"node ./server/server.js\" ",
+    "start": "node ./server/server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod --sourcemaps"
+
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~7.1.0",
     "@angular/common": "~7.1.0",
+    "@angular/cli": "~7.1.0",
+    "@angular/compiler-cli": "~7.1.0",
     "@angular/compiler": "~7.1.0",
     "@angular/core": "~7.1.0",
     "@angular/forms": "~7.1.0",
@@ -56,5 +60,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"
+  },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
   }
 }
