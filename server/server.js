@@ -8,7 +8,7 @@ const apiProxy = httpProxy.createProxyServer({
   secure: false,
   changeOrigin: true
   });
-const serverOne = 'https://watsonapihackathon-ilab02-green.dev.px-npe01.cf.t-mobile.com';
+const serverOne = 'https://watsonapihackathon-ilab02-green.dev.px-npe01.cf.t-mobile.com/';
 
 var proxy = require('express-http-proxy');
 // app.use('/graphql', proxy(serverOne));
