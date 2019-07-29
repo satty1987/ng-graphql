@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { FormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 // Apollo
 import { GraphQLModule } from './graphql.module';
@@ -25,6 +27,7 @@ import { GraphQLModule } from './graphql.module';
     AppRoutingModule,
     FormsModule,
     GraphQLModule,
+    NgxPaginationModule,
     NgbModule
   ],
   providers: [],

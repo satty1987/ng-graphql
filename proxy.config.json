@@ -1,0 +1,8 @@
+{
+    "/graphql": {
+        "target": "https://watsonapihackathon-ilab02-green.dev.px-npe01.cf.t-mobile.com",
+        "changeOrigin": true,
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

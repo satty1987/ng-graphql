@@ -1,1 +1,25 @@
 
+header{
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    min-height: 65px;
+
+}
+
+    .right-text{
+        text-align: right;
+        padding: 0;
+    }
+    .logo-wrapper,.right-text{
+        
+        display: inline-block;
+    }
+    .logo-wrapper{
+        margin: 16px 0;
+        padding: 0;
+    }
+    .payment-logo{
+        width:150px;
+    }

@@ -1,2 +1,170 @@
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
+<div class="box" *ngIf="isLoader">
+        <div id="loader-wrapper">
+         <div id="loader"></div>
+         <div class="loader-section section-left"></div>
+         <div class="loader-section section-right"></div>
+        </div>
+       </div> 
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 card p-5 offset-md-2 mt-5">
+            <form class="form-inline">
+                <div class="form-group mb-2">
+                  <label for="lbluserName" class="sr-only">User Name</label>
+                  <input type="text" readonly class="form-control-plaintext" id="lbluserName" value="User Name" >
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                  <label for="txtUserName" class="sr-only"></label>
+                  <input type="text" class="form-control" id="txtUserName" placeholder="User Name" #userName>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2" (click)="fetchByUserName(userName)">Search</button>
+              </form>
+            
+              <form class="form-inline">
+                <div class="form-group mb-2">
+                  <label for="lblPODName" class="sr-only">POD name</label>
+                  <input type="text" readonly class="form-control-plaintext" id="lblPODName" value="POD name" >
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                  <label for="txtPODName" class="sr-only"></label>
+                  <input type="text" class="form-control" id="txtPODName" placeholder="POD Name" #PODName>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2" (click)="fetchByHostName(PODName)">Search</button>
+              </form>
+            
+              <form class="form-inline">
+                <div class="form-group mb-2">
+                  <label for="lblStoreID" class="sr-only">Store ID</label>
+                  <input type="text" readonly class="form-control-plaintext" id="lblStoreID" value="Store ID">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                  <label for="txtStoreID" class="sr-only"></label>
+                  <input type="text" class="form-control" id="txtStoreID" placeholder="Store ID" #StoreID>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2" (click)="fetchByStoreId(StoreID)">Search</button>
+              </form>
+
+        </div>
+    </div>
+    <div class="reglist p-4" *ngIf="HostNameData?.length>0"> 
+        <button type="button" class="close font-30" data-dismiss="modal" aria-label="Close" (click)="closeContent()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        <h1>Records</h1>
+
+        <div class="float-right mb-3">
+            <button type="submit" class="btn btn-primary" (click)="onNew()">New</button>
+          </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+            
+              <th>Store ID</th>
+              <th>host</th>
+              <th>created On</th>
+              <th>created By</th>
+              <th>Updated By</th>
+              <th>Updated On</th>
+              <th></th>
+             
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let HostName of HostNameData | paginate: {id: i, itemsPerPage: 10, currentPage: p , totalItems: HostNameData.length }; let i = index">
+              <td>{{ HostName.storeId }}</td>
+              <td>{{ HostName.host }}</td>
+              <td>{{ HostName.createdOn}}</td>
+              <td>{{ HostName.createdBy }}</td>
+              <td>{{ HostName.updatedBy }}</td>
+              <td>{{ HostName.updatedOn }}</td>
+              <td>
+                <button type="button" class="btn btn-info btn-sm mb-2" (click)="onEdit(HostName,i)">Edit</button>
+                <button type="button" class="btn btn-danger btn-sm mb-2" (click)="onDeleteStore(HostName,i)">Delete Store</button>
+                <button type="button" class="btn btn-danger btn-sm mb-2" (click)="onDeleteHost(HostName,i)">Delete Host</button>
+
+          
+              </td>
+            
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="col-12 text-right">
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </div>
+       
+
+      </div>
+    
+
+
+      
+</div>
+
+
+<div class="modal fade  " id="exampleModalCenter" tabindex="-1" 
+
+[ngClass]="isEdit ? 'show d-block' : ''"
+
+role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+        <div class="modal-dialog  modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">{{isNew? 'Create New Record' : 'Edit'}}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="close()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <div class="row" >
+                      
+                            <div class="col-md-12 ">
+                              
+                                <form class="form-inline">
+                                    <div class="form-group mb-2">
+                                      <label for="lbluserName" class="sr-only">User Name</label>
+                                      <input type="text" readonly class="form-control-plaintext" id="lbluserName" value="User Name" >
+                                    </div>
+                                    <div class="form-group mx-sm-3 mb-2">
+                                      <label for="txtUserName" class="sr-only"></label>
+                                      <input type="text" class="form-control" id="txtUserNameEdit" placeholder="User Name" #userNameEdit>
+                                    </div>
+                                  </form>
+                                
+                                  <form class="form-inline">
+                                    <div class="form-group mb-2">
+                                      <label for="lblPODName" class="sr-only">POD name</label>
+                                      <input type="text" readonly class="form-control-plaintext" id="lblPODName" value="POD name" >
+                                    </div>
+                                    <div class="form-group mx-sm-3 mb-2">
+                                      <label for="txtPODName" class="sr-only"></label>
+                                      <input type="text" class="form-control" id="txtPODNameEdit" placeholder="POD Name" #PODNameEdit>
+                                    </div>
+                                  </form>
+                                
+                                  <form class="form-inline">
+                                    <div class="form-group mb-2">
+                                      <label for="lblStoreID" class="sr-only">Store ID</label>
+                                      <input type="text" readonly class="form-control-plaintext" id="lblStoreID" value="Store ID">
+                                    </div>
+                                    <div class="form-group mx-sm-3 mb-2">
+                                      <label for="txtStoreID" class="sr-only"></label>
+                                      <input type="text" class="form-control" id="txtStoreIDEdit" placeholder="Store ID" #StoreIDEdit>
+                                    </div>
+                                   
+                                  </form>
+                                  <div class="form-group mb-2">
+                                  <button type="submit" class="btn btn-primary mb-2" *ngIf="!isNew" (click)="updateStoreIdForHost(PODNameEdit,StoreIDEdit,userNameEdit)">Update</button>
+                                  <button type="submit" class="btn btn-primary mb-2" *ngIf="isNew" (click)="createStoreIdForHost(PODNameEdit,StoreIDEdit,userNameEdit)">Create</button>
+                                </div>
+
+                            </div>
+                        </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-backdrop fade show" *ngIf="isEdit" ></div>
