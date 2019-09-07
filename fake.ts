@@ -1,38 +1,33 @@
-
-import { Injectable } from '@angular/core';
-import { API_URLS } from '../constants/api-urls';
-import { HttpHeaders, HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
-import { Subject } from 'rxjs';
-
-@Injectable({
-    providedIn: 'root'
+import { Component, OnInit } from '@angular/core';
+import { NewsService } from 'src/app/core/services/news.service';
+import * as _ from 'lodash';
+@Component({
+  selector: 'app-seat-availability',
+  templateUrl: './seat-availability.component.html',
+  styleUrls: ['./seat-availability.component.scss']
 })
-export class NewsService {
+export class SeatAvailabilityComponent implements OnInit {
+  dataList = [];
+  totalParking = 0;
+  allocateParking = 0;
+  availableParking = 0;
+  constructor(public apiService: NewsService) { }
+ 
 
-    public notify = new Subject<any>();
+  ngOnInit() {
+    const path = '';
+    this.apiService.getHttpRequest(path).subscribe((data) => {
+      this.transformData(data);
+    });
+  }
+  transformData(data) {
+    this.totalParking = _.sumBy(data, (item: any) => {
+      return item.totalParking;
+    });
+    this.allocateParking = _.sumBy(data, (item: any) => {
+      return item.AllocatedParking;
+    });
+    this.availableParking = this.totalParking - this.allocateParking;
 
-    public responseCache = new Map();
-    public apiUrl = environment.apiUrl;
-
-    constructor(
-        private http: HttpClient) {
-    }
-    getHttpRequest(path) {
-        const url = this.apiUrl + path;
-        return this.http.get(url);
-    }
-    postHttpRequest(path, body) {
-        const httpOptions = {
-            headers: new HttpHeaders(
-                {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'cache-control': 'no-cache',
-                    'accept': 'application/json'
-                }
-            )
-        };
-        return this.http.post(path, body, httpOptions);
-    }
+  }
 }
-
