@@ -1,471 +1,277 @@
 [
   {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 242,
-    "parkingSlot": "Tower-1-242",
-    "puid": "f666e887-c607-42e1-9185-8c29ca3c03aa"
+    "parkingSlot": "TW-1-1",
+    "puid": "9c6f577f-b873-4941-b91d-c27d2333db62"
   },
   {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 290,
-    "parkingSlot": "Tower-3-290",
-    "puid": "563fda3f-41f4-4837-9313-e56a3287ad39"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 120,
-    "parkingSlot": "Tower-2-120",
-    "puid": "74d0ab3b-0951-4870-b465-e69a15995cc3"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 259,
-    "parkingSlot": "Tower-1-259",
-    "puid": "653f331b-328d-476c-8999-3e29db3593a1"
+    "parkingSlot": "TW-1-2",
+    "puid": "85f1d70a-647f-45d6-885a-b3c28f9e221e"
   },
   {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 216,
-    "parkingSlot": "Tower-2-216",
-    "puid": "094e5aad-6e20-406d-8de7-e43f2e7d0ba2"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 138,
-    "parkingSlot": "Tower-3-138",
-    "puid": "aebf24fe-342e-40ce-b412-efc7a6e35868"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 298,
-    "parkingSlot": "Tower-3-298",
-    "puid": "5a11630b-1827-415c-94fb-659717d0cdf9"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 231,
-    "parkingSlot": "Tower-1-231",
-    "puid": "c9eccc75-8bca-4e2a-a41d-8b13465cb115"
+    "parkingSlot": "TW-1-3",
+    "puid": "6467b93b-0e9c-4621-a8b5-7583a183496d"
   },
   {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 147,
-    "parkingSlot": "Tower-3-147",
-    "puid": "a8876b76-fbc1-4acb-9d5f-39fa8451c9a7"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 247,
-    "parkingSlot": "Tower-2-247",
-    "puid": "cb5bc76d-a419-4b44-884b-e97eecf237c3"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 105,
-    "parkingSlot": "Tower-3-105",
-    "puid": "7894db43-82e4-4599-8618-d34e1107c9da"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 141,
-    "parkingSlot": "Tower-2-141",
-    "puid": "d9ec8a10-1f9d-4f0c-90e4-aac39b794609"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 228,
-    "parkingSlot": "Tower-1-228",
-    "puid": "fd361499-706d-4d7c-8fe9-bcf26e41118a"
+    "parkingSlot": "TW-1-4",
+    "puid": "72eee8c7-b144-45b3-8649-89115cfcb5d4"
   },
   {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 227,
-    "parkingSlot": "Tower-3-227",
-    "puid": "be0a857b-66ef-4dd3-9160-f6ceec32ea5c"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 283,
-    "parkingSlot": "Tower-1-283",
-    "puid": "e925b66a-bd5e-4d4b-b8d4-b087bd2b18b4"
+    "parkingSlot": "TW-1-5",
+    "puid": "7186aa58-1c6e-46fb-be55-f6c7f3998216"
   },
   {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 211,
-    "parkingSlot": "Tower-2-211",
-    "puid": "633369a8-bfd6-418a-9f5e-446ce616735f"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 195,
-    "parkingSlot": "Tower-2-195",
-    "puid": "aaade8d9-fdc6-468a-a7e6-b41c0e3d15c2"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 104,
-    "parkingSlot": "Tower-3-104",
-    "puid": "8d089c01-a570-452a-8e07-25e0ecd68f59"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 170,
-    "parkingSlot": "Tower-1-170",
-    "puid": "3f3e78b7-0195-4b9d-ba63-f99b73554d11"
+    "parkingSlot": "TW-1-6",
+    "puid": "1dab2b32-0630-4674-9e02-d667b8cb1dc3"
   },
   {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 281,
-    "parkingSlot": "Tower-1-281",
-    "puid": "880c94aa-79f9-4872-bafb-3e1efdd84746"
+    "parkingSlot": "TW-1-7",
+    "puid": "f8636614-671a-40ee-af65-c92655f9f05c"
   },
   {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 225,
-    "parkingSlot": "Tower-2-225",
-    "puid": "57541c9f-d757-4caf-a1f5-63e932d3c351"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 292,
-    "parkingSlot": "Tower-1-292",
-    "puid": "e58c5053-a3e1-459e-94e0-adbd63621533"
+    "parkingSlot": "TW-1-8",
+    "puid": "b22070ae-e977-424d-8c83-e17562548af5"
   },
   {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 203,
-    "parkingSlot": "Tower-3-203",
-    "puid": "1e81c576-c731-45e7-8ca9-5618d4e04da1"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 180,
-    "parkingSlot": "Tower-2-180",
-    "puid": "dc5bffc2-e5cb-44cd-884f-bc1509bf8fe7"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 278,
-    "parkingSlot": "Tower-2-278",
-    "puid": "a15432f4-12a8-4e96-af40-6de2524d4b01"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 148,
-    "parkingSlot": "Tower-2-148",
-    "puid": "e9852d8b-539f-436c-8250-cd71737b0437"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 272,
-    "parkingSlot": "Tower-3-272",
-    "puid": "c1566168-44e1-4f2f-a347-f22fa0eafc26"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 270,
-    "parkingSlot": "Tower-3-270",
-    "puid": "e84f09b8-a1d0-46fb-854d-6642407374ed"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 217,
-    "parkingSlot": "Tower-2-217",
-    "puid": "a2a543d4-ff69-4c0d-ac16-a2c632a5eb9c"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 126,
-    "parkingSlot": "Tower-2-126",
-    "puid": "d1960fa9-2a81-457d-b0da-9bce6320ad1f"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 282,
-    "parkingSlot": "Tower-3-282",
-    "puid": "1d921ad1-4355-4dfb-bd97-9665339a2f51"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 129,
-    "parkingSlot": "Tower-2-129",
-    "puid": "d475caf5-93b2-4c8c-96f2-913095dc2b44"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 250,
-    "parkingSlot": "Tower-2-250",
-    "puid": "bb6e114a-4f3e-4567-937c-b3bb800f236b"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 107,
-    "parkingSlot": "Tower-1-107",
-    "puid": "f9d4adc9-818c-4d27-8cf6-485956966463"
+    "parkingSlot": "TW-1-9",
+    "puid": "a499b1b6-f5e8-482a-a9b8-7a281dd6c96e"
   },
   {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 141,
-    "parkingSlot": "Tower-3-141",
-    "puid": "cc60c9bd-327a-43d6-940c-d5ebf648b455"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 126,
-    "parkingSlot": "Tower-2-126",
-    "puid": "920a979b-476b-49a5-9849-8014ab0e0a42"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 231,
-    "parkingSlot": "Tower-3-231",
-    "puid": "5e6bf6be-e7db-4ef8-9ba7-9290ad8d05a4"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 116,
-    "parkingSlot": "Tower-1-116",
-    "puid": "fc337026-2c42-47f5-a308-1f33193e75fb"
+    "parkingSlot": "TW-1-10",
+    "puid": "571ba604-bca4-464e-98f9-29c25b073794"
   },
   {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 217,
-    "parkingSlot": "Tower-2-217",
-    "puid": "accf60ad-ce02-4cd6-bdf4-2c0b78063acd"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 230,
-    "parkingSlot": "Tower-1-230",
-    "puid": "9f0dc9be-6e2c-4aee-bd96-5ca31d22d6e0"
+    "parkingSlot": "TW-1-11",
+    "puid": "5325cda7-8845-45c0-832f-4b5d691cd5c9"
   },
   {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 264,
-    "parkingSlot": "Tower-2-264",
-    "puid": "5176cd66-f64b-4e96-b8a5-7c63ca53362d"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 138,
-    "parkingSlot": "Tower-3-138",
-    "puid": "cab6b199-7e51-4d51-8e11-ebd5afd1bda5"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 265,
-    "parkingSlot": "Tower-2-265",
-    "puid": "0270c546-f7e7-408f-9131-9a503b55e351"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 252,
-    "parkingSlot": "Tower-1-252",
-    "puid": "7fcaae1f-389c-4661-80c0-246b89cc19e4"
+    "parkingSlot": "TW-1-12",
+    "puid": "a5ef4455-154b-411f-b66f-bae34e61a575"
   },
   {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 130,
-    "parkingSlot": "Tower-1-130",
-    "puid": "a7b50315-8e4b-421a-ae77-7a51fc0159d7"
+    "parkingSlot": "TW-1-13",
+    "puid": "99ed482a-e3a2-4410-8bd8-067c53fd4170"
   },
   {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 114,
-    "parkingSlot": "Tower-1-114",
-    "puid": "154d3c98-33c5-4497-8e7b-e389cb29ccb2"
+    "parkingSlot": "TW-1-14",
+    "puid": "1d3d4a96-d3a5-4b0a-ab03-0807cab64e0e"
   },
   {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 273,
-    "parkingSlot": "Tower-1-273",
-    "puid": "5bc4e108-3363-4917-8b9f-3cec406e48a2"
+    "parkingSlot": "TW-1-15",
+    "puid": "e31f1c5d-5faf-4519-a090-710116d07ebc"
   },
   {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 197,
-    "parkingSlot": "Tower-2-197",
-    "puid": "18bd2c90-e022-4f71-a8f2-0655d6fe8f8a"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 209,
-    "parkingSlot": "Tower-3-209",
-    "puid": "e9b106d1-d549-415b-bc07-3f5b3dbcba26"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 105,
-    "parkingSlot": "Tower-3-105",
-    "puid": "4f706773-aabe-4e55-8e1a-a4e8fdcc2790"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 261,
-    "parkingSlot": "Tower-3-261",
-    "puid": "0cad85c5-50c2-4196-a6b6-92bc35317cff"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 107,
-    "parkingSlot": "Tower-3-107",
-    "puid": "0bcd19e7-964a-4246-9566-f158e5f165e0"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 167,
-    "parkingSlot": "Tower-2-167",
-    "puid": "6fd60c45-c07f-4266-b6c4-838f4c0280a5"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 282,
-    "parkingSlot": "Tower-1-282",
-    "puid": "ca1c3d8c-acb6-4418-9c6c-f2c5e1fdf5ae"
+    "parkingSlot": "TW-1-16",
+    "puid": "a06d6b56-cc76-460c-9e6b-25e92985ef3b"
   },
   {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 183,
-    "parkingSlot": "Tower-3-183",
-    "puid": "a7d9e70d-5ea3-4ab3-872c-143d2d0faa85"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 211,
-    "parkingSlot": "Tower-3-211",
-    "puid": "1b861373-4b1e-44b3-9dc8-dbca0b965e30"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 194,
-    "parkingSlot": "Tower-3-194",
-    "puid": "60232053-d21f-457e-a277-7def0f43c8cc"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 165,
-    "parkingSlot": "Tower-2-165",
-    "puid": "78974e87-e67f-436f-a02a-a7523f885654"
-  },
-  {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 184,
-    "parkingSlot": "Tower-2-184",
-    "puid": "81b4c79a-3c03-4fa1-b0cf-0963ed04b8e2"
-  },
-  {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 104,
-    "parkingSlot": "Tower-3-104",
-    "puid": "438f9a8e-2030-4bce-8f65-76dbdb4cc64f"
-  },
-  {
-    "random": 1,
     "towerName": "Tower-1",
-    "index": 167,
-    "parkingSlot": "Tower-1-167",
-    "puid": "f42be5d6-5a99-498f-9e9d-b80499c009ee"
+    "parkingSlot": "TW-1-17",
+    "puid": "78dab4ce-f8ea-4df3-bec2-ff41af51eccc"
   },
   {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 284,
-    "parkingSlot": "Tower-2-284",
-    "puid": "056a89ed-c56b-426b-828c-bbf1729e8926"
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-18",
+    "puid": "320d7234-8c8b-42a0-b324-219bd6c3f1aa"
   },
   {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 193,
-    "parkingSlot": "Tower-2-193",
-    "puid": "8573f427-8d91-4def-9eeb-e8b33c4a37ac"
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-19",
+    "puid": "fa5e0e5f-5601-499f-abe0-f370bcb7b682"
   },
   {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 202,
-    "parkingSlot": "Tower-2-202",
-    "puid": "9c00bf6d-eb9e-4e16-bae5-69bd85d90f91"
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-20",
+    "puid": "529878fc-2b85-4ae9-afb7-b09617c2f91a"
   },
   {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 166,
-    "parkingSlot": "Tower-3-166",
-    "puid": "aaee3434-8790-4bcf-821b-5b79b79fcd21"
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-21",
+    "puid": "fe53213f-bcbb-4edf-a70b-290c1db4effa"
   },
   {
-    "random": 3,
-    "towerName": "Tower-3",
-    "index": 204,
-    "parkingSlot": "Tower-3-204",
-    "puid": "f811d5d1-2fec-4417-ac9b-0383b3a34d47"
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-22",
+    "puid": "fac5d832-8093-4744-84ec-327efb219dd1"
   },
   {
-    "random": 2,
-    "towerName": "Tower-2",
-    "index": 189,
-    "parkingSlot": "Tower-2-189",
-    "puid": "7e546a66-28e7-49fe-8709-b7af2fe29028"
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-23",
+    "puid": "451493c2-c6be-415e-8af9-d168565b373a"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-24",
+    "puid": "fdc222f2-8e6b-4fcc-af43-b468f841010f"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-25",
+    "puid": "6e1e19e1-3a1f-4fe2-9151-224fd681b880"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-26",
+    "puid": "65f62540-1456-40fa-a282-994090ac5516"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-27",
+    "puid": "47bb9e0f-07f8-4920-95ff-06e133bc63ef"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-28",
+    "puid": "b93542e2-162f-42d0-84f9-f93fffae4568"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-29",
+    "puid": "71e068a9-7ace-4562-a95e-f6a4a859c90a"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-30",
+    "puid": "65ca1b62-00a2-4559-b649-560504289800"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-31",
+    "puid": "369f6c41-ff9f-43f5-9bba-e9ba3473fe8c"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-32",
+    "puid": "45c2f3d0-f9e3-4032-bb5d-f6183bce42ca"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-33",
+    "puid": "6f095306-d4a0-4e16-86c4-7165cc68afe9"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-34",
+    "puid": "27bc9f08-5d59-40c8-b60a-84820ca5092e"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-35",
+    "puid": "17bc161b-93f9-4377-b20c-1b825e30b772"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-36",
+    "puid": "cca9f2fa-c8ad-4a23-9ccc-09dfd8ee6419"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-37",
+    "puid": "c429d37e-fec3-4308-a077-aff773919497"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-38",
+    "puid": "6e5d54a2-12b4-498f-b8fe-e32abdcb9240"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-39",
+    "puid": "a5c7cbf0-0dd4-41f9-bdde-298a6b8814da"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-40",
+    "puid": "b1d9129a-6b6b-4c7c-b172-776c436eb8c9"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-41",
+    "puid": "11c7bff1-04de-412c-9463-7ca3e040e0aa"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-42",
+    "puid": "9d839837-0cba-4648-ad82-edc7c253db6b"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-43",
+    "puid": "10b6ad77-542d-4f2c-9e8e-ed781f75f1d8"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-44",
+    "puid": "37cfa79d-9b80-4268-8690-31bdcdc90ff3"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-45",
+    "puid": "4e57fde3-7851-4ffb-a53a-8cb48cfa7285"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-46",
+    "puid": "96f335c7-219d-45ec-b95e-fe992b56b804"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-47",
+    "puid": "382b3eea-8d63-4a55-b66e-10ed9c868a33"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-48",
+    "puid": "8669f3f7-53a2-488b-8047-ff6472148690"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-49",
+    "puid": "870edb52-245c-4604-ab0e-5de14f361c9a"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-50",
+    "puid": "1814a03e-b2cf-40a1-81a4-6b51019c24ac"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-51",
+    "puid": "213f6afe-b8d0-4f3b-9ac2-7bf54d08e3c8"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-52",
+    "puid": "33205b18-be89-4619-bee8-f49cd50f8849"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-53",
+    "puid": "4d68adf4-665b-4cef-8acf-55beb45b6a3e"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-54",
+    "puid": "36f7dd75-1012-4d34-9112-56438afa4436"
+  },
+  {
+    "towerName": "Tower-1",
+    "parkingSlot": "TW-1-55",
+    "puid": "df0ee5db-e105-4bdc-88d9-88ab060892a3"
   }
 ]
