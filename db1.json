@@ -1,82 +1,322 @@
 [
   {
-    "user_fname": "Aguirre",
-    "user_lname": "Hampton",
-    "role": "customer",
     "accounts_id": "5dd4267c9b7584997cfd6511",
-    "mobile_number": "(871) 573-3842",
-    "email_address": "aguirrehampton@frolix.com",
-    "secondary_number": "aguirrehampton@frolix.com",
-    "address": "855 Gunther Place, Lemoyne, Virgin Islands, 6172"
+    "amount": 1,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-01-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
   },
   {
-    "user_fname": "Singleton",
-    "user_lname": "Williams",
-    "role": "customer",
+    "accounts_id": "5dd4267c9b7584997cfd6511",
+    "amount": 501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-02-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c9b7584997cfd6511",
+    "amount": 1001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-03-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c9b7584997cfd6511",
+    "amount": 1501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-04-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c9b7584997cfd6511",
+    "amount": 2001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-05-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
     "accounts_id": "5dd4267ca2c9a04f03489d93",
-    "mobile_number": "(881) 538-3347",
-    "email_address": "singletonwilliams@frolix.com",
-    "secondary_number": "singletonwilliams@frolix.com",
-    "address": "854 Branton Street, Brandermill, Montana, 2759"
+    "amount": 1,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-01-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
   },
   {
-    "user_fname": "Bertie",
-    "user_lname": "Arnold",
-    "role": "customer",
+    "accounts_id": "5dd4267ca2c9a04f03489d93",
+    "amount": 501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-02-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267ca2c9a04f03489d93",
+    "amount": 1001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-03-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267ca2c9a04f03489d93",
+    "amount": 1501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-04-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267ca2c9a04f03489d93",
+    "amount": 2001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-05-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
     "accounts_id": "5dd4267c9a0e8c12eaab68c8",
-    "mobile_number": "(865) 468-3552",
-    "email_address": "bertiearnold@frolix.com",
-    "secondary_number": "bertiearnold@frolix.com",
-    "address": "194 Moore Place, Cornfields, New Hampshire, 5184"
+    "amount": 1,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-01-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
   },
   {
-    "user_fname": "Carlene",
-    "user_lname": "Nguyen",
-    "role": "customer",
+    "accounts_id": "5dd4267c9a0e8c12eaab68c8",
+    "amount": 501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-02-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c9a0e8c12eaab68c8",
+    "amount": 1001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-03-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c9a0e8c12eaab68c8",
+    "amount": 1501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-04-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c9a0e8c12eaab68c8",
+    "amount": 2001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-05-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
     "accounts_id": "5dd4267c48f4371f610e3b6d",
-    "mobile_number": "(860) 416-2022",
-    "email_address": "carlenenguyen@frolix.com",
-    "secondary_number": "carlenenguyen@frolix.com",
-    "address": "853 Freeman Street, Fresno, Oklahoma, 314"
+    "amount": 1,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-01-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
   },
   {
-    "user_fname": "Janice",
-    "user_lname": "Palmer",
-    "role": "customer",
+    "accounts_id": "5dd4267c48f4371f610e3b6d",
+    "amount": 501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-02-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c48f4371f610e3b6d",
+    "amount": 1001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-03-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c48f4371f610e3b6d",
+    "amount": 1501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-04-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c48f4371f610e3b6d",
+    "amount": 2001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-05-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
     "accounts_id": "5dd4267ce00bd91ab9820aa7",
-    "mobile_number": "(981) 496-3913",
-    "email_address": "janicepalmer@frolix.com",
-    "secondary_number": "janicepalmer@frolix.com",
-    "address": "870 Hooper Street, Lawrence, Minnesota, 3311"
+    "amount": 1,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-01-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
   },
   {
-    "user_fname": "Webster",
-    "user_lname": "Ford",
-    "role": "customer",
+    "accounts_id": "5dd4267ce00bd91ab9820aa7",
+    "amount": 501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-02-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267ce00bd91ab9820aa7",
+    "amount": 1001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-03-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267ce00bd91ab9820aa7",
+    "amount": 1501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-04-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267ce00bd91ab9820aa7",
+    "amount": 2001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-05-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
     "accounts_id": "5dd4267c79d85fa5b320666a",
-    "mobile_number": "(932) 432-3728",
-    "email_address": "websterford@frolix.com",
-    "secondary_number": "websterford@frolix.com",
-    "address": "294 Joralemon Street, Detroit, North Dakota, 9870"
+    "amount": 1,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-01-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
   },
   {
-    "user_fname": "Rena",
-    "user_lname": "Humphrey",
-    "role": "customer",
+    "accounts_id": "5dd4267c79d85fa5b320666a",
+    "amount": 501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-02-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c79d85fa5b320666a",
+    "amount": 1001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-03-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c79d85fa5b320666a",
+    "amount": 1501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-04-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c79d85fa5b320666a",
+    "amount": 2001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-05-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
     "accounts_id": "5dd4267c903e674c34f96fa6",
-    "mobile_number": "(870) 439-3330",
-    "email_address": "renahumphrey@frolix.com",
-    "secondary_number": "renahumphrey@frolix.com",
-    "address": "415 Bowne Street, Grill, Tennessee, 6902"
+    "amount": 1,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-01-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
   },
   {
-    "user_fname": "Sweet",
-    "user_lname": "Christian",
-    "role": "customer",
+    "accounts_id": "5dd4267c903e674c34f96fa6",
+    "amount": 501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-02-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c903e674c34f96fa6",
+    "amount": 1001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-03-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c903e674c34f96fa6",
+    "amount": 1501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-04-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267c903e674c34f96fa6",
+    "amount": 2001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-05-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
     "accounts_id": "5dd4267cc720d7603f4be659",
-    "mobile_number": "(843) 402-2357",
-    "email_address": "sweetchristian@frolix.com",
-    "secondary_number": "sweetchristian@frolix.com",
-    "address": "477 Garland Court, Frank, Texas, 247"
+    "amount": 1,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-01-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267cc720d7603f4be659",
+    "amount": 501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-02-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267cc720d7603f4be659",
+    "amount": 1001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-03-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267cc720d7603f4be659",
+    "amount": 1501,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-04-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
+  },
+  {
+    "accounts_id": "5dd4267cc720d7603f4be659",
+    "amount": 2001,
+    "interest": "5",
+    "startDate": "2019-11-20T17:00:13.775Z",
+    "endate": "2020-05-20T17:00:13.775Z",
+    "fixedDeposit_status": "success"
   }
 ]
