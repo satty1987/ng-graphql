@@ -1,322 +1,106 @@
 [
   {
+    "account_number": "80000000",
     "accounts_id": "5dd4267c9b7584997cfd6511",
-    "amount": 1,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-01-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
+    "branch_ID": 4223,
+    "account_type": "saving",
+    "account_balance": 567890,
+    "account_creation": "Thu Nov 21 2019 23:50:20 GMT+0530 (India Standard Time)",
+    "account_charges": "",
+    "primary_holder": "Aguirre Hampton",
+    "customers": [
+      
+    ]
   },
   {
-    "accounts_id": "5dd4267c9b7584997cfd6511",
-    "amount": 501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-02-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c9b7584997cfd6511",
-    "amount": 1001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-03-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c9b7584997cfd6511",
-    "amount": 1501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-04-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c9b7584997cfd6511",
-    "amount": 2001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-05-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
+    "account_number": "80000001",
     "accounts_id": "5dd4267ca2c9a04f03489d93",
-    "amount": 1,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-01-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
+    "branch_ID": 4223,
+    "account_type": "current",
+    "account_balance": 567890,
+    "account_creation": "Thu Nov 21 2019 23:50:20 GMT+0530 (India Standard Time)",
+    "account_charges": "",
+    "primary_holder": "Singleton Williams",
+    "customers": [
+      
+    ]
   },
   {
-    "accounts_id": "5dd4267ca2c9a04f03489d93",
-    "amount": 501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-02-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267ca2c9a04f03489d93",
-    "amount": 1001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-03-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267ca2c9a04f03489d93",
-    "amount": 1501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-04-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267ca2c9a04f03489d93",
-    "amount": 2001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-05-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
+    "account_number": "80000002",
     "accounts_id": "5dd4267c9a0e8c12eaab68c8",
-    "amount": 1,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-01-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
+    "branch_ID": 4223,
+    "account_type": "saving",
+    "account_balance": 567890,
+    "account_creation": "Thu Nov 21 2019 23:50:20 GMT+0530 (India Standard Time)",
+    "account_charges": "",
+    "primary_holder": "Bertie Arnold",
+    "customers": [
+      
+    ]
   },
   {
-    "accounts_id": "5dd4267c9a0e8c12eaab68c8",
-    "amount": 501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-02-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c9a0e8c12eaab68c8",
-    "amount": 1001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-03-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c9a0e8c12eaab68c8",
-    "amount": 1501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-04-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c9a0e8c12eaab68c8",
-    "amount": 2001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-05-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
+    "account_number": "80000003",
     "accounts_id": "5dd4267c48f4371f610e3b6d",
-    "amount": 1,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-01-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
+    "branch_ID": 4223,
+    "account_type": "checking",
+    "account_balance": 567890,
+    "account_creation": "Thu Nov 21 2019 23:50:20 GMT+0530 (India Standard Time)",
+    "account_charges": "",
+    "primary_holder": "Carlene Nguyen",
+    "customers": [
+      
+    ]
   },
   {
-    "accounts_id": "5dd4267c48f4371f610e3b6d",
-    "amount": 501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-02-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c48f4371f610e3b6d",
-    "amount": 1001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-03-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c48f4371f610e3b6d",
-    "amount": 1501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-04-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c48f4371f610e3b6d",
-    "amount": 2001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-05-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
+    "account_number": "80000004",
     "accounts_id": "5dd4267ce00bd91ab9820aa7",
-    "amount": 1,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-01-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
+    "branch_ID": 4223,
+    "account_type": "checking",
+    "account_balance": 567890,
+    "account_creation": "Thu Nov 21 2019 23:50:20 GMT+0530 (India Standard Time)",
+    "account_charges": "",
+    "primary_holder": "Janice Palmer",
+    "customers": [
+      
+    ]
   },
   {
-    "accounts_id": "5dd4267ce00bd91ab9820aa7",
-    "amount": 501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-02-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267ce00bd91ab9820aa7",
-    "amount": 1001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-03-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267ce00bd91ab9820aa7",
-    "amount": 1501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-04-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267ce00bd91ab9820aa7",
-    "amount": 2001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-05-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
+    "account_number": "80000005",
     "accounts_id": "5dd4267c79d85fa5b320666a",
-    "amount": 1,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-01-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
+    "branch_ID": 4223,
+    "account_type": "checking",
+    "account_balance": 567890,
+    "account_creation": "Thu Nov 21 2019 23:50:20 GMT+0530 (India Standard Time)",
+    "account_charges": "",
+    "primary_holder": "Webster Ford",
+    "customers": [
+      
+    ]
   },
   {
-    "accounts_id": "5dd4267c79d85fa5b320666a",
-    "amount": 501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-02-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c79d85fa5b320666a",
-    "amount": 1001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-03-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c79d85fa5b320666a",
-    "amount": 1501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-04-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c79d85fa5b320666a",
-    "amount": 2001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-05-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
+    "account_number": "80000006",
     "accounts_id": "5dd4267c903e674c34f96fa6",
-    "amount": 1,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-01-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
+    "branch_ID": 4223,
+    "account_type": "saving",
+    "account_balance": 567890,
+    "account_creation": "Thu Nov 21 2019 23:50:20 GMT+0530 (India Standard Time)",
+    "account_charges": "",
+    "primary_holder": "Rena Humphrey",
+    "customers": [
+      
+    ]
   },
   {
-    "accounts_id": "5dd4267c903e674c34f96fa6",
-    "amount": 501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-02-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c903e674c34f96fa6",
-    "amount": 1001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-03-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c903e674c34f96fa6",
-    "amount": 1501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-04-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267c903e674c34f96fa6",
-    "amount": 2001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-05-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
+    "account_number": "80000007",
     "accounts_id": "5dd4267cc720d7603f4be659",
-    "amount": 1,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-01-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267cc720d7603f4be659",
-    "amount": 501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-02-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267cc720d7603f4be659",
-    "amount": 1001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-03-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267cc720d7603f4be659",
-    "amount": 1501,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-04-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
-  },
-  {
-    "accounts_id": "5dd4267cc720d7603f4be659",
-    "amount": 2001,
-    "interest": "5",
-    "startDate": "2019-11-20T17:00:13.775Z",
-    "endate": "2020-05-20T17:00:13.775Z",
-    "fixedDeposit_status": "success"
+    "branch_ID": 4223,
+    "account_type": "checking",
+    "account_balance": 567890,
+    "account_creation": "Thu Nov 21 2019 23:50:20 GMT+0530 (India Standard Time)",
+    "account_charges": "",
+    "primary_holder": "Sweet Christian",
+    "customers": [
+      
+    ]
   }
 ]
