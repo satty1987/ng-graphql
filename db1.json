@@ -1,6 +1,6 @@
 {
   "GET_SOLUTIONS_URL": "v1/getsolution",
-  REPORT_URL: "v1/report",
+  "REPORT_URL": "v1/report",
   "SEARCH_URL": "v1/search",
   "UPDATE_URL": "v1/update-request",
   "ITEMSPERPAGE": 3,
