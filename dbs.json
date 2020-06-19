@@ -1,0 +1,842 @@
+[
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BW-ADMIN-500424: Failed to read profile",
+    "error_description": "[ERR] Failed to configure the AppNode launcher, TIBCO-BW-ADMIN-500424: Failed to read profile from [/home/vcap/app/tmp/pcf.substvar]",
+    "solution": "In property file, Replaced “no value” with required values and updated ‘&’ with ‘&amp;’ Replace \"\" with required values."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "TIBCO-THOR-FRWK-600011: java.lang.NumberFormatException: For input string",
+    "error_description": "StartFailed {TIBCO-THOR-FRWK-600011: Error occured processing property initialization of Application [serviceEnterpriseDevice.application{ServiceEnterpriseDevice Application, [bw-application,], 1.7, serviceEnterpriseDevice.application_1.7.15 [483], Stopped {resolved }}].  java.lang.NumberFormatException: For input string: \"\" } \" which needs to be resolved.",
+    "solution": "In property file, verify properties of type int and double and ensure they are valid numbers. Do not keep values as empty/null."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "TIBCO-BW-PALETTE-JMS-500005: Failed to query JNDI: Failed to connect to any server",
+    "error_description": "com.tibco.bw.sr.jms.runtime.decorators.unified.JMSConnectionFactoryWrapper.createQueueConnection(JMSConnectionFactoryWrapper.java:207) ~[com.tibco.bw.sharedresource.jms.runtime_6.4.904.004.jar:na] at com.tibco.bw.sr.jms.runtime.decorators.unified.JMSConnectionFactoryWrapper.createQueueConnection(JMSConnectionFactoryWrapper.java:248) ~[com.tibco.bw.sharedresource.jms.runtime_6.4.904.004.jar:na]  javax.jms.JMSException: Failed to query JNDI: Failed to connect to any server",
+    "solution": "Verify the TIBCO EMS url and username and password in your properties file. Ensure correct values are configured in the properties file for respective environments."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "PVM-XML-106018: Expression Creation Error",
+    "error_description": "CausedBy com.tibco.pvm.dataexch.xml.util.exceptions.PmxException: PVM-XML-106026: Transformation preparation failed for XSLT input '<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+    "solution": "This indicates an XSLT error while performing mapping. Look for the field xsl:template name in the error message to identify which activity is causing the issue, and verify the mappings. The field Exception processing activity in the error message will indicate which process is having the issue. Logs present in the Apps Manager will indicate what was the exact xslt transformation error. This will help with debugging. Look for the term CausedBy."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "Module Configuration Property",
+    "error_description": "Process Property [TMO-U2-Env] in process [Applications.EndPoints] of BW Module [] does not have same type as Module Configuration Property. Expected: [{http://www.w3.org/2001/XMLSchema}int], Actual: [{http://www.w3.org/2001/XMLSchema}string]",
+    "solution": "Verify the process property in the process mentioned in the error message. Data type should be same as the module property."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "XPST0008: org.genxdm.processor.xpath.v20.err.XPST0008Wrapper",
+    "error_description": " org.genxdm.processor.xpath.v20.err.XPST0008Wrapper: [err:XPST0008] The expression refers to a variable name,that is not defined in the static context.",
+    "solution": "Refresh/Re-do the mapping of the activity. This will ensure that the input variable is defined in the xslt of the mapping."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BW-SR-FRWK-503001: Failed to configure SharedResource",
+    "error_description": "com.tibco.bw.sharedresource.runtime.exception.ModulePropertyNotFoundException: TIBCO-BW-SR-FRWK-503001: Failed to configure SharedResource [JMS.SharedResources_JMS_JMS_U2_EVENTS_SSL-sslClient] for Module [], Application",
+    "solution": "Verify the module properties configured in the shared resource. This could be an httpClientConnection, SSLClientResource, JMSConnection, etc. Verify that a valid configurations are present for these resources."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "java.io.FileNotFoundException",
+    "error_description": "java.io.FileNotFoundException: path-to-xsd",
+    "solution": "Verify if there is any references to the xsd path provided in the error message. If a reference exists, verify that file is present in your application. If file is present, verify that correct file path is provided in the refereces. If xsd reference is present in dependencies of a process and is un-used, delete the reference to the schema."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "Mismatched token: Expecting 'QName' but found token ''",
+    "error_description": "org.genxdm.processor.xpath.v20.parse.string.yap.YapMismatchedTokenException: Mismatched token at (56, 56): Expecting 'QName' but found token ''.  org.genxdm.processor.xpath.v20.err.XPST0003: [err:XPST0003] The expression is not a valid instance of the grammar. Cause: Mismatched token at (56, 56): Expecting 'QName' but found token ''..",
+    "solution": "Incorrect mapping would be present. Common issue is Empty filter[<<Filter>>] was mapped instead of actual iteration value."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "javax.security.auth.login.LoginException: Key store not found or is not valid",
+    "error_description": "javax.security.auth.login.LoginException: java.lang.RuntimeException: Key store not found or is not valid: com.tibco.trinity.runtime.base.provider.credential.keystore.KeystoreException: com.tibco.trinity.runtime.base.provider.credential.keystore.KeystoreRuntimeException: com.tibco.trinity.runtime.base.provider.credential.keystore.KeystoreRuntimeException: Unable to retrieve key store from URL(s) c:/CE/TrustStore.jks; errors were java.io.FileNotFoundException: Couldn't find file c:/CE/TrustStore.jks at /home/vcap/app/c:/CE/TrustStore.jks. ",
+    "solution": "Verify that ur applications SSL client is referring to the keystore file present in the sharedServiceContext module. Also ensure the property BW_GLOBAL_TRUSTED_CA_STORE=/home/vcap/app/tibco.home/tibcojre64/1.8.0/lib/security/cacerts is set correctly."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "BX-600028: Adding definition failed for process",
+    "error_description": " com.tibco.bx.core.faults.BxException: BX-600028: Adding definition failed for process [*SOAP].",
+    "solution": "For SOAP endpoint processes, verify the binding in the reference is setup correctly. A valid HTTP client connection should be configured with the correct URI."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "ModulePropertyNotFoundException",
+    "error_description": "com.tibco.bw.sharedresource.runtime.exception.ModulePropertyNotFoundException: TIBCO-BW-SR-FRWK-503001: Failed to configure SharedResource [JMS.JMS_U2_EVENTS_SSL] for Module [], Application []. The ModuleProperty [/TMO/Env/JMS/ServiceContext/SSL/JMS_SSL_JNDI_ServiceContext_Username] configured for this SharedResource does not exist in the BW Module. Ensure that valid ModuleProperty is configured.",
+    "solution": "Invalid module property is configured in the application. Ensure that the module property configured for a resource actually exists in that module. Verify the naming conventions used. Eg: For the above error, there is an extra forward slash at the beginning of the GV, whereas this is not present in the module properties configured."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "Unresolved requirement: Require-Bundle",
+    "error_description": "Unresolved requirement: Require-Bundle: sharedServiceContext; bundle-version=\"1.0.0\"",
+    "solution": "Verify your parent pom.xml file and ensure all required module dependencies are present."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "TIBCO-BW-BINDING-SOAP-500120 : BX-600013 - Message does not match message definition.",
+    "error_description": "ERROR [bwResourceHTTPConnector.qtp-160] com.tibco.bw.binding.soap - TIBCO-BW-BINDING-SOAP-500100: Error occurred while processing Service Request message for Operation [], SoapServiceBinding [SOAPServiceBinding], Application [] due to exception [org.osoa.sca.ServiceRuntimeException]. Sending Undeclared Fault message to the consumer of this service. Root Exception message: com.tibco.bx.core.faults.BxException: BX-600013: Message, [] does not match message definition.",
+    "solution": "Verify the service agent. Ensure that for each operation, correct operation name is selected in the GetContext activity."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Value not found for Token. Failed to subsitute properties",
+    "error_description": "java.lang.Exception: Value not found for Token []. Failed to subsitute properties.",
+    "solution": "The properties file is missing few GVs which are present in your RUNTIME.substvar file. Ensure that your properties file has all the required properties present. Regenerate using jar to make the properties file in sync with runtime.substvar file."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "TIBCO-THOR-FRWK-CMN-500105",
+    "error_description": "TIBCO-THOR-FRWK-CMN-500105: Profile [RUNTIME.substvar] contains property [] that is not known to any of the modules in the ear file",
+    "solution": "Correct your runtime files. It is having references to GV's which are no longer present in the application. Best practice is to re-generated RUNTIME file when any GV is added/deleted."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "Nagarajamma.D@hcl.com",
+    "title": "{EmailValidator}validate",
+    "error_description": "The expanded QName ({java://com.tmobile.emailutil.EmailValidator}validate) and number of arguments (1) of the function call does not match the name and arity of a function signature in the static context.",
+    "solution": "Latest customXPath functions should be available in your application and correct number of arguments to be passed in input."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BW-SCHEMA-RESOLVER-500101: Schema not found",
+    "error_description": "com.tibco.bw.core.runtime.schemaresolver.SchemaNotFoundException: TIBCO-BW-SCHEMA-RESOLVER-500101: Schema not found. Schema [namespace=http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw, location=null",
+    "solution": "Verify that correct schema path is mentioned in dependencies for the process. If schema is related to activityerror+com, then throw activity will be having issues. Mapping for throw activity would need to be redone."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "TIBCO-BW-FRWK-600072: Reference binding  failed to initialize",
+    "error_description": "TIBCO-BW-FRWK-600071: Reference bindings failed to initialize: TIBCO-BW-FRWK-600072: Reference binding [com.tibco.bw.frwk.ReferenceBindingModel@6b3b5172] failed to initialize: TIBCO-BW-BINDING-SOAP-550030: Failed to initialize SoapReferenceBinding [], Application [] due to exception [java.net.URISyntaxException]: java.net.URISyntaxException: Relative path in absolute URI:",
+    "solution": "Verify the endpointURI configured in the SOAP reference binding. It should be a valid uri, and should not contain host/port."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BW-WSDL-CACHE-500007",
+    "error_description": "com.tibco.bw.cache.runtime.CacheException: TIBCO-BW-WSDL-CACHE-500007: Unable to resolve imported wsdl ref: importer = [bundleentry://493.fwk1518529528]; importee tns []; importee location = [../]",
+    "solution": "Check the dependencies of the process and verify correct schema location and namespaces are provided. If there is any unused dependencies, delete them."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BW-BINDING-SOAP-555030/SOAPProcessingException",
+    "error_description": "TIBCO-BW-BINDING-SOAP-555030: Unable to send a request to the service provider for Operation [{***], SoapReferenceBinding [SOAPReferenceBinding], Application [***] due to exception [org.apache.axiom.soap.SOAPProcessingException]. Message Received: [First Element must contain the local name, Envelope , but found ErrorSOAPEnvMsg]",
+    "solution": "Test with valid request"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Log in Failed- Eventhough password is correct",
+    "error_description": "Log in Failed eventhough password is correct",
+    "solution": "Change datatype as \"Password\" in the code"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BW-BINDING-SOAP-555030/sharedresource.http.api.HTTPException",
+    "error_description": "TIBCO-BW-BINDING-SOAP-555030: Unable to send a request to the service provider for Operation [*****], SoapReferenceBinding [SOAPReferenceBinding], Application [***] due to exception [com.tibco.bw.sharedresource.http.api.HTTPException]. Message Received: [org.apache.axis2.AxisFault: Remote host closed connection during handshake]",
+    "solution": "Uncheck ssl configuration in HTTP connection under scurity/confidentiality, to remove ssl config"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Application configuration error",
+    "error_description": "A set of module properties included in the BW application [XXXX] are not in sync with the module properties configured for the module [targetUnion]. Re-include module in the application.\r\r\n",
+    "solution": "Re-include module in the application\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "Activity configuration error",
+    "error_description": "The activity [XXXX] has input configuration error\r\r\nUnexpected output, no such element in the current context\r\r\n",
+    "solution": "Delete invoke activity and recreate it. Make changes in WSDL.\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "Process Service configuration error",
+    "error_description": "The WSDL porttype for the process service [ModuleActivator] in process [XXXX.Activator] is not resolved or not set. Reconfigure porttype if already configured.\r\r\n",
+    "solution": "WSDL file is either missing or not configured. Map it correctly.\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "Queue receiver not up",
+    "error_description": "Queue receiver not up post event processor migration",
+    "solution": "Queue name is configured wrongly in the code. So no queue receivers  will be available for the right queue name. Instead it will be available for wrong queue name.\r\r\nCorrect queue name in destination field"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "Option to map dynamic header is not coming",
+    "error_description": "Option to map dynamic header is not coming\r\r\n",
+    "solution": "Need to map HTTP connector in binding. Then you wil get field reflected to do mapping\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Healthcheck is not active",
+    "error_description": "Healthcheck is not active post migration",
+    "solution": "First make sure health check process is added in the code.\r\r\nSecondly, check whether healthcheck process is added under components"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Application configuration error ",
+    "error_description": "The Module [xxxx] has a dependency on JavaBundle [sharedServiceContext]\r\r\nThe JavaBundle [sharedServiceContext] must be included in the Application [xxxx.application]\r\r\n\r\r\n",
+    "solution": "Include the respective modules under “.application “ module\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "Process variable configuration error",
+    "error_description": "The type configuration is missing for variable [Generate-Error] in process [xxxx].",
+    "solution": "Delete Generate Error “Throw” activity and recreate new one.\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Activator process is not up and running",
+    "error_description": "Not seeing in logs, log of Loading XML files for SensetiveElementsFile,SensetiveElementsMasksXSLT or ErrorCodesAndDesc etc",
+    "solution": "Add activator process under components"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Schema import error",
+    "error_description": "The schema [xxxx] imports another schema with namespace [xxxxx]; \r\r\nhowever multiple schemas with identical namespace [xxxxx] were found in one or more modules.\r\r\n\r\r\n",
+    "solution": "Delete the unused import tags in the schema\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "JDBCSQLException",
+    "error_description": "SQL Exception occurred (SQL STATE = 65000) - detailMessage - ORA-06550: line 1, column 7:PLS-00306: wrong number or types of arguments in call to ****'ORA-06550: line 1, column 7:PL/SQL: Statement ignored-{ActivityName=****, ProcessName=*****, ModuleName=****}</msg><msgCode>TIBCO-BW-PALETTE-JDBC-500009</msgCode><sqlState>65000</sqlState><detailStr>ORA-06550: line 1, column 7:PLS-00306: wrong number or types of arguments in call to *******'ORA-06550: line 1, column 7:PL/SQL: Statement ignored",
+    "solution": "Datatype value was incorrect for datatype varchar2 and ref cursor. Correct in backend.\r\r\nEg: VARCHAR2=\"12\" and REF CURSOR= \"-10\""
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BW-BINDING-SOAP-555030/NoHttpResponseException",
+    "error_description": "TIBCO-BW-BINDING-SOAP-555030: Unable to send a request to the service provider for Operation ****], SoapReferenceBinding [***], Application [***] due to exception [com.tibco.bw.sharedresource.http.api.HTTPException]. Message Received: [org.apache.http.NoHttpResponseException: **** failed to respond",
+    "solution": "Add SSL configuration. In HTTP connection, under Security/Confidentiality mark SSL  check box and do the needed configuration"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Referenced file contains errors",
+    "error_description": "Referenced file contains errors (file:/C:/xxx/xxx/abc .wsdl). For more information, right click on the message in the Problems View and select \"Show Details\r\r\n",
+    "solution": "Create schema from the referred WSDL and refer that new schema.\r\r\n\r\r\nCopy the content of WSDL in Notepad and remove all the WSDL fields and pasted the content in new schema file.\r\r\n\r\r\nCompare  wsdl and schema file.\r\r\n\r\r\nAfter creating new schema file , correct the import tag with the right schema location\r\r\n\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "Activity configuration error",
+    "error_description": "The activity [xxxx] has input configuration error. XPath is missing. Provide XPath or use Remove Mapping command.\r\r\n",
+    "solution": "Create a Property name under process property in that process and add the  GV/property under process property .\r\r\n\r\r\nRemap from process property created newly and correct the mapping.\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Activity configuration error",
+    "error_description": "The activity [xxxx] has input configuration error. The referenced schema component has an error: Unresolved reference in Schema\r\r\n",
+    "solution": "Re-refer the Error schema in Fault Editor of end activity. And delete , add new throw activity and reconfigure that\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Activity configuration error",
+    "error_description": "The activity [Java-Method] has input configuration error. Value required for \"xxxx\"\r\r\n",
+    "solution": "It’s a TIBCO CE bug, just refer some other method and then rerefer the correct method. This field will go after that.\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Getting Empty values in SOAP Error Response for Error Code and Error Description",
+    "error_description": "Getting Empty values in SOAP Error Response for Error Code and Error Description",
+    "solution": "Map the Error from Invoke activity as following instead of mapping it with just available 2 default error types available(ActivityTimedOutException and DefaultFaultElementException), because sometimes we may even get other type of exception. Eg: HttpCommunicationException\r\r\nSo instead of mapping \"ActivityTimedOutException\"  directly for msgCode/msg do mapping as below,\r\r\n\r\r\n$_error_ABC/*/msgCode\r\r\n$_error_ABC/*/msg\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "Process Service configuration error",
+    "error_description": "The WSDL porttype for the process service [ModuleActivator] in process [xxxx.Activator] is not resolved or not set. Reconfigure porttype if already configured.\r\r\n",
+    "solution": "WSDL file is either missing or not configured.\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Shared Resource configuration error",
+    "error_description": "The shared resource name is not consistent with the package hierarchy. The name of shared resource must be consistent with the package name in which the shared resource is configured.",
+    "solution": "Correct the package name or \r\r\ndelete and re-create the shared resource\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "Activity output configuration error",
+    "error_description": "The output for the activity  in process is not configured correctly.",
+    "solution": "Re reference the call process."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BW-BINDING-SOAP-555020/com.tibco.bw.binding.soap.SOAPHTTPClientException/401 Unauthorized",
+    "error_description": "TIBCO-BW-BINDING-SOAP-555020: Unable to receive response from the service provider for Operation [{***], SoapReferenceBinding [***], Application [**** due to exception [com.tibco.bw.binding.soap.SOAPHTTPClientException]. Message Received: [HTTP/1.1 401 Unauthorized]",
+    "solution": "Add identity activity and do the needed configuration in HTTP Client"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "SOAP UI testing, getting \"Read timeout\" error with  no SOAP response",
+    "error_description": "SOAP UI testing, getting \"Read timeout\" error with  no SOAP response",
+    "solution": "For the respective invoke activity, under Advanced Tab, configure \"ActivityTimeout\" field value"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Activity configuration error.Error output is not having any fields",
+    "error_description": "The activity  has input configuration error. Copy-of incompatible; names match, but content differs : ATTRNAME unknown",
+    "solution": "\r\r\nGo to the respective call process and re refer the process.\r\r\nNow you can see the error details schema reflected and issue resolved.\r\r\n\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "Nagarajamma.D@hcl.com",
+    "title": "More than required WSDL’s gets migrated.",
+    "error_description": "More than one WSDLs are seen in migrated CE code.",
+    "solution": "Delete the one not used."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Expected Non Repeating got repeating ",
+    "error_description": "When a group is around the activities and the xpath condition over the group is not satisfied after migration, the error, Expected Non Repeating got repeating is displayed.",
+    "solution": "Verify the xpath condition and resolve issues of the group (eg: iterator, for-each...)\r\r\nRe-map the same from the group.\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "Nagarajamma.D@hcl.com",
+    "title": "Post migration jar will not be migrated ",
+    "error_description": "jar files not visible post migration in CE code.",
+    "solution": "We need to add them manually and refer the class under javaInvoke.\r\r\nAlso suggested to use TIBCO BWCE 2.4.2 version for easy resolution.\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Variable not defined ",
+    "error_description": "When the Variable not defined error is displayed post migration for multiple variables created in the input of any activity",
+    "solution": "Remove all the variables, recreate the variables and add the mappings again. \r\r\nIn this case the back-end references are also removed.\r\r\nDelete the xpath on the variables one by one and re-correct them. \r\r\nThis will resolve the issue sometimes.\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Post migration GetContext activity gets converted to Empty activity.",
+    "error_description": "Empty getContext activity post migration",
+    "solution": "Manually need to create and fix it."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Runtime properties generated are preceded with '.'",
+    "error_description": "Sometimes we will get run time GV’s created as below, but the gv’should not precede with '.' \".TMO.App.OpenText.SleepIntervalMilliSeconds\" or \".TMO.Env.Adapters.SOAP.RetailDocument.Authentication_Password\"",
+    "solution": "Remove slash in front of the respective GV’s for respective modules. Note: Respective module and not the main module. In both, Default.substvar and Module.bwm file remove the modules containing the above files from \"includes\" of main \".application\" module and re-refer that. It will resolve the issue. Instead of 3 slashes it will become 2 slash."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "GV's not getting reflected in RUNTIME properties",
+    "error_description": "Eventhough GV’s are there in default.substvar, its not getting reflected in RUNTIME properties generated using utility.",
+    "solution": "In readprops.txt, file add the respective GV’s and then regenerate runtime properties."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Function tib:concat-sequence-format()  error",
+    "error_description": "After migrating a project using the tib:concat-sequence-format() the output returns errors",
+    "solution": "The function tib:concat-sequence-format() does not accept string as return value for node set. \r\r\nPost-migration, replace tib:concat-sequence-format() with string-join() function.\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Unresolved reference schema ",
+    "error_description": "When the error Unresolved reference schema is displayed.",
+    "solution": "Reconfigure the broken module variables. \r\r\nRedo all the mappings as they break due to reconfiguration.\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "Healthcheck throwing 404 error",
+    "error_description": "/healthcheck fails with an HTTP 404 Not found error.",
+    "solution": "Verify the application has an healthcheck configured. The healthcheck process needs to be added to components in the main process."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "PVM-XML-106027: Transformation failed for XSLT input” ",
+    "error_description": "Transformation failed for XSLT input",
+    "solution": "Mapping fixes/Design time issues is present while mapping. Check if any Numeric conversions are there and are done correctly."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "TIBCO-BW-CORE-500051: Activity [Java-Code] fault.",
+    "error_description": " com.tibco.bw.runtime.ActivityFault: Input data error in field [] because [com.tibco.xml.data.primitive.values.XmlUntypedAtomicValue cannot be cast to com.tibco.xml.data.primitive.values.XsGregorian].-{ActivityName=Java-Code, ProcessName=***********}",
+    "solution": "Please change the XSLT version of mapping to java activity to 2.0.\r\r\n\r\r\nAlso in case of date fields , do explicit parse and format as shown below while mapping it to Java invoke activity.\r\r\n\r\r\ntib:parse-date( \"yyyy-MM-dd\",format-date(<<XPath>>, \"[Y0001]-[M01]-[D01]\"))"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "FunctionException: XPath function {http://www.tibco.com/bw/xslt/custom-functions}compare-date exception: com.tibco.xml.data.primitive.values.XsString cannot be cast to com.tibco.xml.data.primitive.values.XsGregorian",
+    "error_description": "XPath function {http://www.tibco.com/bw/xslt/custom-functions}compare-date exception: com.tibco.xml.data.primitive.values.XsString cannot be cast to com.tibco.xml.data.primitive.values.XsGregorian",
+    "solution": "String element types being mapped to date element types , need to be parsed .\r\r\n\r\r\nAdditionally, inside of the dateTime function, the strings need to be parsed for dateTime function to work.\r\r\n\r\r\nBefore: format-date(<<XPath>>, \"[Y0001]-[M01]-[D01]\")\r\r\n\r\r\nFor function: format-date(tib:parse-date(\"yyyy-MM-dd\",<<Date Xpath>>), \"[Y0001]-[M01]-[D01]\")\r\r\n\r\r\nIf done inside a string function , it would end like:\r\r\nTo string: string(format-date(tib:parse-date(\"yyyy-MM-dd\",<<Date Xpath>>), \"[Y0001]-[M01]-[D01]\"))\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "vinita.monga@hcl.com",
+    "title": "Xpath condition which has pipe (\"|\") is not migrating as expected",
+    "error_description": "Xpath with Pipe (\"|\") is working properly after migrated from BW.",
+    "solution": "BW Xpath expression: (upper-case(<<XPath>>) ='A'|'B'|'C')\r\r\n\r\r\nAfter following all the migration steps, above condition gets translated as below.\r\r\nCE Xpath expression: (upper-case(<<XPath>>) = \"A\" or \"B\" or \"C\")\r\r\n\r\r\nThis doesn’t work as expected and this expression should be modified  like below. This works fine in CE\r\r\n\r\r\n((upper-case(<<XPath>>) = \"A\") \r\r\nor ((<<XPath>>) = \"B\")\r\r\n or ((<<XPath>>) = \"C\"))\r\r\n\r\r\nAnother approach to fix this is (work around provided by TIBCO) as below\r\r\nupper-case(<<XPath>>) = (\"A\", \"B\",\"C\")\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "Nagarajamma.D@hcl.com",
+    "title": "Failed to configure SharedResource",
+    "error_description": "Failed to configure SharedResource [HttpClientResource].",
+    "solution": "Key store will be having hardcoded value for the URL (location of the jks file) and password fields.\r\r\n\r\r\ncreate module properties 'BW_GLOBAL_TRUSTED_CA_STORE with type string and BW_GLOBAL_TRUSTED_CA_STORE_Password with type password' in the shared module and map these module properties to URL(BW_GLOBAL_TRUSTED_CA_STORE) and password(BW_GLOBAL_TRUSTED_CA_STORE_Password) of the key Store "
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "Nagarajamma.D@hcl.com",
+    "title": "Invoke Activity(Soap-Request-Reply) , in the error transaction ‘DefaultElement’ won’t appear",
+    "error_description": "DefaultElement not visible",
+    "solution": "You need to go to bindings of reference panel and check 'enable defaultElement’. "
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "com.tibco.trinity.runtime.base.provider.credential.keystore.KeystoreRuntimeException",
+    "error_description": " com.tibco.trinity.runtime.base.provider.credential.keystore.KeystoreRuntimeException: com.tibco.trinity.runtime.base.provider.credential.keystore.KeystoreRuntimeException: Unable to retrieve key store from URL(s) /cert/tibco_qlab02_allcertificates.jks; errors were java.io.FileNotFoundException: Couldn't find file /cert/tibco_qlab02_allcertificates.jks at /cert/tibco_qlab02_allcertificates.jks. ",
+    "solution": "Update below GV in properties files, with correct cert location.\r\r\nBW_GLOBAL_TRUSTED_CA_STORE"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "Healthcheck is failing",
+    "error_description": "HTTP ERROR 404\r\r\nProblem accessing /healthcheck\r\r\nReason : Not Found",
+    "solution": "Add healthcheck process under Processes folder under main application."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "christine.w@hcl.com",
+    "title": "Healthcheck failing with 502 gateway timeout",
+    "error_description": "Runtime Error in PCF Logs ",
+    "solution": "Go through each error in runtime logs and resolve them.\r\r\n FIX , re deploy and check healthcheck status again for  the deployed application."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BW-PALETTE-JDBC-500009",
+    "error_description": "TIBCO-BW-PALETTE-JDBC-500009; SQL Exception occurred (SQL STATE = 65000) - detailMessage - ORA-06550: line 1, column 7:",
+    "solution": "In JDBC Call procedure activity , under Advanced tab , we have Override S/A Datatype Schema as checkbox , check this box."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Properties in property files preceeded with \".\"",
+    "error_description": "Incorrect properties file generated\r\r\n\r\r\n.TMO.Env.JMS.ServiceContext.SSL.JMS_SSL_JNDI_ServiceContext_Context_URL=ssl://10.158.150.61:9023,ssl://10.158.150.60:9023\r\r\n\r\r\n.TMO.Env.JMS.ServiceContext.SSL.JMS_SSL_JNDI_ServiceContext_Password=#!IZnzpQ1vcD3+HKBGpwPpqEcSLY/dImLV\r\r\n\r\r\n",
+    "solution": "Remove extra \"/\" preceeding the properties in below files:\r\r\n1.\tDefault.substvar\r\r\n2.\tModule.bwm file\r\r\n3.     Check module properties in each target module \r\r\n        to make sure that properties are not preceeded \r\r\n        by \"/\".\r\r\n4.     Remove the modules containing the above files \r\r\n        from “includes” of main “.application” module \r\r\n        and re -refer that."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "Nagarajamma.D@hcl.com",
+    "title": "LOGGING DATA",
+    "error_description": "[bwEngThread:In-Memory Process Worker-13] c.t.b.p.g.L.****.Log - ERROR In LOGGING || SERVICE = OnStartup",
+    "solution": "Please check the logging url and host has correct values"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "Nagarajamma.D@hcl.com",
+    "title": "502 BadGateway -Not visible errros in App Manager",
+    "error_description": "While running the pcf app no errros can be logged in PCF logs and application is not ACTIVE and runnign with 502.",
+    "solution": "Use cf commands and check errors by enabling ssh for that application"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "Nagarajamma.D@hcl.com",
+    "title": "Process has crashed with type: \"web\"",
+    "error_description": "App instance exited with **id *** payload: {\"instance\"=>\"*****\", \"index\"=>0, \"cell_id\"=>\"*******\", \"reason\"=>\"CRASHED\", \"exit_description\"=>\"APP/PROC/WEB: Exited with status 137 (out of memory)\", \"crash_count\"=>2, \"crash_timestamp\"=>******\r\r\n \"version\"=>\"*********\"} ",
+    "solution": "increase Memory Limit for that application.\r\r\nGo to appsManager -> overview -> Scale -> Memory Limit\r\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Schema references issues post migration",
+    "error_description": "References of schemas that are imported in another schema are not found. ",
+    "solution": "Delete the import and add it again. \r\nThe references are updated with the correct namespace and the namespace issues will be resolved."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Variable not defined error for Iterate Group ",
+    "error_description": "Variable not defined error for Iterate Group \r\nIndex variable is used outside the Iterate scope\r\n",
+    "solution": "Define a Process Variable of type \"integer\" and map it to the Iterate Group Index variable. \r\nNow you can use this variable in the Process scope.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Catch block Mapping errors",
+    "error_description": "Activities in the Catch block show Mapping errors",
+    "solution": "Re-map the activity input accordingly. "
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Catch-All \"End\" error is not configured.",
+    "error_description": "When a Catch All fault handler is used in a TIBCO BusinessWorks Container Edition 5.x project, on migration the fault handler is converted as expected but an End activity is created in place of a Catch All activity. ",
+    "solution": "An End activity without any input is created. Delete the end activity to resolve the issue."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Java Invoke activities - Input Configuration Error",
+    "error_description": "Java Invoke activities show Input Configuration Error after migration",
+    "solution": "Go to the General tab of the Java Invoke activity and check whether the Class Name is available in the workspace. \r\nIf available, re-select the Java class.\r\nIf the class is not available, check whether the JAR file packaging the Java class is available. Otherwise, copy the JAR file to the \"lib\" folder and reselect the Java class.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Unresolved WSDL references",
+    "error_description": "Processes have unresolved WSDL references",
+    "solution": "Close and reopen the project. \r\nIf this does not fix the references, then check the WSDL Interface value on the General tab of the Process Service.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Child module /builds/**.application.parent/../\"ExternalSharedModule\" of /builds/*****.application.parent/pom.xml does not exist",
+    "error_description": "[ERROR] The project com.tibco.bw:serviceEnterpriseDevice.application.parent:1.7.11 (/builds/**/**/**.application.parent/pom.xml) has 3 errors\r\n[ERROR] Child module /**/**.application.parent/../sharedServiceObjects of /builds/**/**.application.parent/pom.xml does not exist\r\n[ERROR] Child module /builds/***.application.parent/../sharedServiceContext of /builds/**.application.parent/pom.xml does not exist\r\n[ERROR] Child module /builds/**.application.parent/../sharedCommonSchemas of /builds/*****.application.parent/pom.xml does not exist\r\n",
+    "solution": "Delete external jar references from parent.pom.xml"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Error in reading property file when build pack is upgraded",
+    "error_description": "TIBCO-BW-ADMIN-500424: Failed to read profile.",
+    "solution": "Use \"&amp;\" for \"&\" in Build pack ver 2.4.5\r\nUse \"&\"  for \"&\" in Build pack ver 2.5.2"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Namespace issue after refactoring/clean ",
+    "error_description": "In case where your process was error free before, but after refactoring or doing clean, its starts throwing namespace issues . And if you fix one namespace it creates namespace issue at other place. Fault schemas output is not reflected properly to map them as input.",
+    "solution": "Take the needed process from old commits(commit when  process was without error ) from repo. Copy content of code of earlier working  process from repo and paste that in the backend of the new process. And re-open the code, issue will be fixed"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Process Reference configuration error",
+    "error_description": "The WSDL porttype for the process reference [***] in process [***] is not resolved or not set.  Reconfigure porttype if already configured.",
+    "solution": "Delete the dependencies of process and re-create  reference binding"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Unsupported RV palette ",
+    "error_description": " ERROR: Application [serviceEnterpriseDevice.application] is using unsupported RV palette and can not be deployed in CloudFoundry. Rebuild your application for CloudFoundry using TIBCO Business Studio Container Edition.",
+    "solution": "Delete the RV related resources in the code"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Failed to add modules to the Application/ Failed to create BW EAR Archive",
+    "error_description": "[ERROR] Failed to execute goal com.tibco.plugins:bw6-maven-plugin:1.3.1:bwear (default-bwear) on project serviceOrderOMS.application: Failed to create BW EAR Archive: NullPointerException ",
+    "solution": "The issue is with the sequence of modules added in “.application.parent” pom. The “.application” module should always be last in sequence of adding dependent modules."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "Tibco JWT -> Operation level Validation flag:: null",
+    "error_description": "Getting “Null” Even after the gv value is fine and Config file is proper.",
+    "solution": "Add Activator process in the component under module descriptor"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-001020",
+    "error_description": "Failed to obtain HTTP Connector\r\nresource for SoapServiceBinding [{0}],\r\nApplication [{1}:{2}]",
+    "solution": "This is an internal product error.\r\nContact TIBCO support.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-001040",
+    "error_description": "Failed to parse binding meta data file\r\n[{0}] in bundle [{1}] due to exception\r\n[{2}].",
+    "solution": "Ensure that the xml file contents are\r\nvalid and well formed."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-001050",
+    "error_description": "Failed to process File [{0}] in bundle\r\n[{1}]. BindingName is not specifiedǯ",
+    "solution": "Ensure that the 'name' aĴribute of the\r\nservice element contains a unique\r\nBinding Name."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-001130",
+    "error_description": "Failed to locate WSDL definition for\r\nport type [{0}].",
+    "solution": "Ensure that the a WSDL exist with\r\nport type [{0}] in the application\r\nmodule."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-001170",
+    "error_description": "SOAP Binding [{1}] for portType [{0}]\r\nis missing Transport Configurationǯ\r\n",
+    "solution": "Ensure that the SOAP Binding [{1}] for\r\nport type [{0}] is configured with a\r\nTransport.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-001130",
+    "error_description": "Failed to load WSDL definition for\r\nnamespace [{0}].",
+    "solution": "Make sure the WSDL with namespace\r\n[{0}] exists in the application module.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-500040",
+    "error_description": "Failed to initialize SoapServiceBinding\r\n[{0}]. A Service Endpoint URI [{1}] is\r\nalready registered\r\n",
+    "solution": "Ensure that each SOAP/HTTP service\r\nhas unique URL."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-500070",
+    "error_description": "Failed to process Reply message for\r\nOperation [{0}], SoapServiceBinding\r\n[{1}], Application [{2}:{3}] due to\r\nexception [{4}]. Sending Undeclared\r\nFault message to the consumer of this\r\nservice. Root Exception message: [{5}]",
+    "solution": "Ensure that the Binding configuration\r\nand Context Configurationǰ if any,\r\ndone on SoapServiceBinding [{1}] are\r\ncorrect."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-500080",
+    "error_description": "Error occurred while processing\r\nService Request messages Context\r\nInformation for Operation [{0}],\r\nSoapServiceBinding [{1}], Application\r\n[{2}:{3}] due to exception [{4}]. Root\r\nException message: {5}",
+    "solution": "Ensure that the Context Mapping\r\ndone on SoapServiceBinding [{1}] are\r\ncorrect.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-500100",
+    "error_description": "Error occurred while processing\r\nService Request message for\r\nOperation [{0}], SoapServiceBinding\r\n[{1}], Application [{2}:{3}] due to\r\nexception [{4}]. Sending Undeclared\r\nFault message to the consumer of this\r\nservice. Root Exception message: {5}",
+    "solution": "Ensure that the Message part\r\nconfiguration and header\r\nconfigurationǰ if any, done on\r\nSoapServiceBinding [{1}] are correct.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-500110",
+    "error_description": "Failed to process Declared Fault\r\nMessage for Operation [{0}],\r\nSoapServiceBinding [{1}], Application\r\n[{2}:{3}] due to exception [{4}]. Sending\r\nUndeclared Fault message to the\r\nconsumer of this service. Root\r\nException message: {5}.",
+    "solution": "Ensure that the Context Mapping and\r\nconfiguration done on\r\nSoapServiceBinding [{1}] are correct.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-500150",
+    "error_description": "Failed to start SoapServiceBinding\r\n[{0}], Application [{1}:{2}] due to\r\nexception [{3}]\r\n",
+    "solution": "Ensure that the Transport\r\nConfiguration done on\r\nSoapServiceBinding [{0}] are correct.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-500160",
+    "error_description": "Failed to stop SoapServiceBinding\r\n[{0}], Application [{1}:{2}] due to\r\nexception [{3}]",
+    "solution": "This is an internal product error.\r\nContact TIBCO support."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-500280",
+    "error_description": "Failed to authenticate Request\r\nmessage for Operation [{0}],\r\nSoapServiceBinding [{1}], Application\r\n[{2}:{3}] due to exception [{4}].",
+    "solution": "Check if the identity resource\r\nreferenced in Http Client resource\r\ncontains username and password."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-550020",
+    "error_description": "Failed to create\r\nSoapReferenceEndpoint [{0}] due to\r\nexception [{1}]\r\n",
+    "solution": "Ensure that configurations done on\r\nReference Binding [{0}] are correct."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-550110",
+    "error_description": "Error occurred while processing the\r\ndeclared fault message from the\r\nservice provider of the Operation [{0}],\r\nSoapReferenceBinding [{1}],\r\nApplication [{2}:{3}] due to exception\r\n[{4}]\r\n",
+    "solution": "Ensure that the declared fault send\r\nback by the Service Provider is valid\r\nand well formed SOAP Fault.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-550140",
+    "error_description": "Failed to Initialize JMS transport\r\nprimitive for SoapReferenceBinding\r\n[{0}], Application [{1}:{2}] due to\r\nexception [{3}]\r\n",
+    "solution": "Ensure that the Transport Sender\r\nconfigurations are correct."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-555040",
+    "error_description": "Unable to send request the service\r\nprovider for Operation [{0}],\r\nSoapReferenceBinding [{1}],\r\nApplication [{2}:{3}] due to exception\r\n[{4}]. Message Received: [{5}]",
+    "solution": "Ensure that HTTP Client\r\nconfigurations are configured as per\r\nservice provider requirements.\r\n or Ensure that the COOKIE format is\r\ncorrect"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-555020",
+    "error_description": "Unable to receive response from the\r\nservice provider for Operation [{0}],\r\nSoapReferenceBinding [{1}],\r\nApplication [{2}:{3}] due to exception\r\n[{4}]. Message Received: [{5}]\r\n",
+    "solution": "Ensure that HTTP Client\r\nconfigurations are configured as per\r\nservice provider requirements.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-555000",
+    "error_description": "Unable to receive response from the\r\nservice provider for Operation [{0}],\r\nSoapReferenceBinding [{1}],\r\nApplication [{2}:{3}] due to exception\r\n[{4}]. Message Received: [{5}]",
+    "solution": "Ensure that the Service Provider is\r\navailable.\r\nor\r\nEnsure that HTTP Client\r\nconfigurations are configured as per\r\nservice provider requirements.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-550240",
+    "error_description": "Failed to create Endpoint URL for\r\nOperation [{0}],\r\nSoapReferenceBinding [{1}],\r\nApplication [{2}:{3}] due to exception\r\n[{4}]\r\n",
+    "solution": "Ensure that the Endpoint URI\r\nconfiguration on\r\nSOAPRefernceBinding [{1}] is correct.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BWBINDINGSOAP-550230",
+    "error_description": "Failed to convert JMS message to\r\nstring due to exception [{1}].",
+    "solution": "Ensure that the configuration done on\r\nReference Binding are correct.\r\n"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishkumar.p@hcl.com",
+    "title": "TIBCO-BW-BINDING-SOAP-555030/ValidatorException: Certificate signature validation failed",
+    "error_description": "Unable to send a request to the service provider for Operation [{***], SoapReferenceBinding [SOAPReferenceBinding], Application [***] due to exception [com.tibco.bw.sharedresource.http.api.HTTPException]. Message Received: [org.apache.axis2.AxisFault: sun.security.validator.ValidatorException: Certificate signature validation failed]",
+    "solution": "Certificate Configuration in build pack"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "RPX errors - TIBCO-BW-BINDING-SOAP-550110: Error occurred while processing the declared fault message from the service provider of the Operation due to exception [java.lang.NullPointerException",
+    "error_description": "Fault messages from RPX are not returned in correct structure back to TIBCO CE due to namespace/namespace prefix issues.",
+    "solution": "Invoke rpx using a proxy service \"targetRpxSoapProxy\" which takes care of the namespace prefixes of the fault element. Replace the RPX host/port with the targetRpxSoapProxy host/port for the respective environment."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "VariableNotFoundException",
+    "error_description": "com.tibco.expr.core.util.exception.VariableNotFoundException: Variable [..] Not Found",
+    "solution": "Identify the activity causing the VariableNotFoundException from the process stack logs. The mappings containing the variable mentioned in the error needs to be refreshed/redone. Alternatively, renaming the activity and performing new mappings will also resolve the issue."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "The server certificate not found",
+    "error_description": "The server certificate [ The server certificate [ ..] not found ] not found",
+    "solution": "Correct the SSLClientConfiguration - This should always refer to a keystore present in the sharedServiceContext module. The property BW_GLOBAL_TRUSTED_CA_STORE also needs to be configured correctly"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "App failing to startup but there are no errors in logs.",
+    "error_description": "TIBCO CE application fails to startup. But there is no logs in the apps manager to identify the root cause or the error description.",
+    "solution": "Enable ssh for the respective space in pcf. Once enabled, ssh into your container by running cf ssh <appName> . Once in the container, run curl -v http://localhost:8090/bw/framework.json/osgi?command=la to find out which processes or modules are unresolved and fix those issues in the code. You would need CF-CLI to run these commands"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "Value not found for Token",
+    "error_description": "Error resolving profile tokens: Value not found for Token [...]",
+    "solution": "Verify that the Property mentioned in the error is present in your respective property files. Also, ensure that your app name matches with the name of your properties file."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "BX-600013 com.tibco.bx.core.Resources.MESSAGE_NOT_MATCHING_DEFINTION",
+    "error_description": "Sending Undeclared Fault message to the consumer of this service. Root Exception message: com.tibco.bx.core.faults.BxException: BX-600013: Message, [...] does not match message definition.",
+    "solution": "In the service agent, the GetContext would be having the wrong operation name configured in the general tab. Correct the operation name."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "OutOfMemoryErro",
+    "error_description": "Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread \"bwResourceHTTPClient.IdleConnectionTimeoutThread\"",
+    "solution": "Verify the limit set for your memory and disk in the apps manager, for your specific application. Increase/scale up as required."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "SubjectLookupProxy_GSP",
+    "error_description": "SubjectLookupProxy_GSP errors.",
+    "solution": "This process is not used in CE, since we have migrated from RV SQL Manager to HTTP based. This process can be removed"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "java.io.FileNotFoundException",
+    "error_description": "java.io.FileNotFoundException: *.xsd",
+    "solution": "Verify that the schema is present in the mentioned location. If schema is not present and not being used, run a search to identify where this schema is being referred from and remove/delete that dependency."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "ORA-06508: PL/SQL: could not find program unit being called: \"TIBCO_1.REEF_EVENTS\"",
+    "error_description": "JDBC error reported: (SQLState = 72000) - java.sql.SQLException: ORA-04063: package body \"TIBCO_1.REEF_EVENTS\" has errors\r\n\r\nORA-06508: PL/SQL: could not find program unit being called: \"TIBCO_1.REEF_EVENTS\"\r\n\r\nORA-06512: at line 1",
+    "solution": "Ensure that TIBCO_1 user has appropriate permissions to the procedure and types used in procedure. Check the override default S/A types checkbox in the advanced tab to continue with your Users permissions."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "org.xml.sax.SAXParseException",
+    "error_description": "ava.lang.RuntimeException: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 258; Attribute \"xmlns:ns5\" was already specified for element \"xsl:stylesheet\"",
+    "solution": "Refresh the xslt of the end schema and mappings. Redoing the mappings will resolve the issue."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "Schema import error",
+    "error_description": "Schema import error. The schema [*] imports another schema with namespace [*]; however multiple schemas with identical namespace [*] were found in one or more modules",
+    "solution": "Verify the two schemas. If it is a duplicate, delete one and correct the dependency locations where required. If the two schema are different, set different namespace. Alternatively if it is an application module and it contains multiple schema documents with identical namespace then the imported schema can be configured be unique by specifying the location of the imported schema in the \"<import>\" element"
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "com.tibco.bw.cache.runtime.CacheException",
+    "error_description": "Failed to resolve WSDL [namespace=http://services.tmobile.com/RevenueManagement/PaymentWSIL/V1, location=null], due to exception [com.tibco.bw.cache.runtime.CacheException]",
+    "solution": "A schema location should be configured for the wsdl in the dependencies."
+  },
+  {
+    "timestamp": 1592571910208,
+    "user": "ashishpandey1892@gmail.com",
+    "title": "invalid Base-64 encoded string",
+    "error_description": "com.tibco.trinity.runtime.core.provider.identity.trust.TrustRuntimeException: javax.security.auth.login.LoginException: java.lang.RuntimeException: com.tibco.security.AXSecurityException: java.lang.IllegalArgumentException: invalid Base-64 encoded string",
+    "solution": "Configure the property  BW_GLOBAL_TRUSTED_CA_STORE_Password with the correct keystore password."
+  }
+]
